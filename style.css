@@ -1,0 +1,110 @@
+/* Mengatur margin, padding, dan box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Mengubah background halaman menjadi putih keabuan */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333; /* Mengubah warna teks menjadi lebih gelap */
+}
+
+p {
+    font-size: 16px;
+    color: #666; /* Mengubah warna teks agar lebih jelas */
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-btn {
+    display: block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Menyembunyikan efek glowing yang berada di luar tombol */
+    transition: transform 0.3s ease;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.social-btn:hover {
+    transform: scale(1.05); /* Efek pembesaran tombol saat dihover */
+}
+
+.social-btn::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Efek glow putih */
+    transition: top 0.3s ease;
+}
+
+.social-btn:hover::before {
+    top: 100%; /* Efek glowing berpindah dari atas ke bawah saat dihover */
+}
+
+/* Tombol-tombol spesifik dengan warna latar belakang */
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.tiktok {
+    background-color: #000000;
+}
