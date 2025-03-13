@@ -125,3 +125,15 @@ p {
     transition: transform 0.3s ease;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+p {
+    font-family: 'Dancing Script', cursive; /* Font lebih artistik */
+    font-size: 18px;
+    color: #444; /* Sedikit lebih gelap agar nyaman dibaca */
+    line-height: 1.6; /* Jarak antar baris lebih lega */
+    text-align: center; /* Supaya nggak terlalu melebar */
+    max-width: 80%; /* Biar tulisannya nggak terlalu lebar */
+    margin: 0 auto; /* Tengahin teks */
+
+}
