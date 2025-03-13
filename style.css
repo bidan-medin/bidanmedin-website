@@ -108,3 +108,20 @@ p {
 .tiktok {
     background-color: #000000;
 }
+
+.social-btn {
+    display: block;
+    width: 80%; /* Lebar tombol dikurangi */
+    padding: 10px 18px; /* Padding dikurangi sedikit */
+    margin: 6px auto; /* Tengah dan jarak antar tombol dikurangi */
+    border-radius: 25px; /* Membuat bentuk lebih oval */
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Font size dikurangi sedikit */
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
